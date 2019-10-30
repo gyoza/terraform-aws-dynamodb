@@ -110,7 +110,7 @@ resource "aws_dynamodb_table" "default" {
   }
 
   ttl {
-    attribute_name = var.ttl_attribute != null ? var.ttl_attribute : null
+    attribute_name = var.ttl_attribute != null ? var.ttl_attribute : ""
     enabled        = var.ttl_attribute != null ? true : false
   }
 
