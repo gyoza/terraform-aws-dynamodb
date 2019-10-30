@@ -137,7 +137,7 @@ variable range_key_type {
 
 variable ttl_attribute {
   type        = string
-  default     = "Expires"
+  default     = null
   description = "DynamoDB table TTL attribute"
 }
 
